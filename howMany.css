@@ -1,0 +1,56 @@
+body {
+    font: normal 15pt Arial;
+}
+
+.gradient {
+    background: linear-gradient(to right, #1BDCFA, #0BE0B5, #05FD75, black);
+    background-size: 300% 300%;
+    animation: colors 7s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0,1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    font-family: 'digital-clock-font';
+    font-size: 20vh;
+    color: rgb(0, 0, 0)
+
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7/digital-7\ \(mono\ italic\).ttf');
+   }
+
+footer {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
